@@ -15,7 +15,7 @@
     background-size: cover;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-h1{
+.navbar > h1{
     text-align: center;
     font-size: 2vw;
     background-color: rgb(13, 13, 4);
@@ -81,7 +81,7 @@ a:hover{
     margin: 4vw;
     gap: 2vw;
 }
-.printing,.variables,.data_types,.content3{
+.printing,.variables,.data_types,.content3,.operators,.category{
     border: 1px solid black;
     padding: 2vw;
     background-color: white;
@@ -149,11 +149,8 @@ a:hover{
     gap: 1vw;
 }
 .content3{
-    display: flex;
-    justify-content: space-around;
-    margin: 0vw 9.5vw;
-    gap: 2vw;
-    border-radius: 15px;
+    margin: 2vw 9.5vw;
+    gap: 1vw;
 }
 .content3 > h2{
     font-size: 2vw;
@@ -163,17 +160,109 @@ a:hover{
     padding-bottom: 1vw;
     background-color: transparent;
 }
-.content3 > p, pre{
+.content3 > p{
     font-size: 1.5vw;
     font-family: Bebas Neue;
     text-align: left;
     background-color: transparent;
     letter-spacing: 0.02vw;
 }
-.content3 > ul, li{
+.content3 > ul{
     background-color: transparent;
     font-size: 1.2vw;
     font-family: Bebas Neue;
     letter-spacing: 0.02vw;
     padding-left: 0.8vw;
+}
+.operators,.category{
+    margin: 2vw 9.5vw;
+    gap: 1vw;
+}
+.operators > h2{
+    font-size: 2vw;
+    font-family: Bebas Neue;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 1vw;
+    background-color: transparent;
+}
+.operators > p{
+    font-size: 1.5vw;
+    font-family: Bebas Neue;
+    text-align: left;
+    background-color: transparent;
+    letter-spacing: 0.02vw;
+}
+.operators > ul{
+    background-color: transparent;
+    padding-left: 0.8vw;
+}
+.operators > ul > li,.content3 > ul > li{
+    letter-spacing: 0.02vw;
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+.category > h1{
+    font-size: 2.5vw;
+    font-family: Bebas Neue;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vw;
+    background-color: black;
+    color: white;
+    margin: 0 28vw;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.category > p{
+    font-size: 1.5vw;
+    font-family: Bebas Neue;
+    text-align: center;
+    background-color: transparent;
+    letter-spacing: 0.02vw;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.category > ul{
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-family: Bebas Neue;
+    letter-spacing: 0.02vw;
+    text-align: center;
+    padding-left: 0;
+}
+.category > ul > li{
+    letter-spacing: 0.02vw;
+    list-style: None;
+    padding: 0.5vw;
+}
+.category > ul > li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s color 0.3s linear;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+}
+footer{
+    background-color: black;
+    color: rgb(244, 244, 115);
+    padding: 1vw 0 2vw 0;
+    text-align: center;
+}
+footer > p{
+    background-color: transparent;
+    font-size: 2vw;
+    font-family: Bebas Neue;
+    letter-spacing: 0.05vw;
+}
+footer > a{
+    color: rgb(244, 244, 115);
+    font-size: 1vw;
+    padding: 0.5vw;
+    font-family: Bebas Neue;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 300;
+    letter-spacing: 0.05vw;
+    background-color: transparent;
 }
